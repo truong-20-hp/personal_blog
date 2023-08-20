@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    
+}
+
+:root{
+    --color-main: #50b1e4;
+    --red-color: rgb(223, 46, 46);
+}
