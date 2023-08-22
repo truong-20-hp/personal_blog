@@ -6,9 +6,9 @@
     <title>Personal Blog</title>
     <link rel="stylesheet" href="./asset/font-icon-and-grid/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css">
     <link rel="stylesheet" href="./asset/font-icon-and-grid/grid.css">
-    <link rel="stylesheet" href="./asset/css/responsive.css">
     <link rel="stylesheet" href="./asset/css/main.css">
     <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
 </head>
 <body>
     <div class="header">
@@ -17,20 +17,33 @@
                 <div class="header__logo">
                     <a href=""><img src="./asset/img/logo-blog-13.png" class="logo-img"></a>
                 </div>
-                <ul class="header__body">
+                <ul class="header__body hide-on-mobi">
                     <li><a href="" class="header__body__link">Giới thiệu</a></li>
                     <li><a href="" class="header__body__link">Dịch vụ</a></li>
                     <li><a href="" class="header__body__link">Đối tác</a></li>
                     <li><a href="" class="header__body__link">Liên kết</a></li>
                     <li><a href="" class="header__body__link">Sự kiện</a></li>
                 </ul>
-                <div class="header__search">
+                <div class="header__search hide-on-mobi-tablet">
                     <input type="text" class="header__search__input" placeholder="Nhập tìm kiếm..">
                     <i class="header__search__icon fa-solid fa-magnifying-glass"></i>
                 </div>
                 <div class="header__dots">
-                    <a href=""><i class="header__dots__icon fa-solid fa-ellipsis-vertical"></i></a>
+                    <label for="header-dots-checkbox" class="header__dots__link" href=""><i class="header__dots__icon fa-solid fa-bars"></i></label>
+                    <input type="checkbox" hidden id="header-dots-checkbox" class="header__dots__input">
                     <ul class="header__dots__list">
+                        <!-- mobi -->
+                        <li class="show-on-mobi"><label for="header-dots-checkbox" class="header__dots__item__link header__dots__item__link--close"><i class="header__dots__item__icon header__dots__item__icon--close fa-solid fa-xmark"></i></i></li>
+
+                        <!-- tablet mobi -->
+                        <li><a href="" class="header__dots__item__link show-on-mobi-tablet"><i class="header__dots__item__icon fa-solid fa-magnifying-glass"></i> Tìm kiếm</a></li>
+                        <!-- mobi -->
+                        <li class="show-on-mobi"><a href="" class="header__dots__item__link"><i class="header__dots__item__icon fa-solid fa-network-wired"></i></i> Giới thiệu </a></li>
+                        <li class="show-on-mobi"><a href="" class="header__dots__item__link"><i class="header__dots__item__icon fa-brands fa-servicestack"></i></i> Dịch vụ </a></li>
+                        <li class="show-on-mobi"><a href="" class="header__dots__item__link"><i class="header__dots__item__icon fa-solid fa-link"> </i> Liên kết </a></li>
+                        <li class="show-on-mobi"><a href="" class="header__dots__item__link"><i class="header__dots__item__icon fa-solid fa-bell"></i></i> Thông báo </a></li>
+                        <!-- all -->
+                        <li><a href="" class="header__dots__item__link"><i class="header__dots__item__icon fa-solid fa-gear"></i></i> Cài đặt <i class="header__dots__item__icon header__dots__item__icon--setting  fa-solid fa-sort-down"></i></a></li>
                         <li><a href="" class="header__dots__item__link"><i class="header__dots__item__icon fa-solid fa-right-from-bracket"></i> Đăng xuất</a></li>
                         <li><a href="" class="header__dots__item__link"><i class="header__dots__item__icon fa-solid fa-user-plus"></i> Thêm tài khoản</a></li>
 
@@ -39,5 +52,249 @@
             </div>
         </div>
     </div>
+    <div class="category">
+        <div class="grid wide">
+            <div class="row">
+                <label for="category-checkbox" class="category__header">
+                    <img src="./asset/img/avatar.jpg" alt="">
+                    <h3>Truong_hp_20</h3><i class="category__header__icon show-on-mobi-tablet fa-solid fa-caret-down"></i>
+                    <input type="checkbox" hidden id="category-checkbox" class="category__header__input">
+                    <div class="category__list--mobi-tablet show-on-mobi-tablet">
+                        <a href="" class="category__item">Thông tin</a>
+                        <a href="" class="category__item">Sự kiện trong đời</a>
+                        <a href="" class="category__item">Dấu mốc quan trọng</a>
+                        <a href="" class="category__item">Bạn bè</a>
+                        <a href="" class="category__item">Phiêu lưu</a>
+                        <a href="" class="category__item">Khám phá</a>
+                    </div>
+                </label>
+                <div class="category__list hide-on-mobi-tablet">
+                    <a href="" class="category__item">Thông tin</a>
+                    <a href="" class="category__item">Sự kiện trong đời</a>
+                    <a href="" class="category__item">Dấu mốc quan trọng</a>
+                    <a href="" class="category__item">Bạn bè</a>
+                    <a href="" class="category__item">Phiêu lưu</a>
+                    <a href="" class="category__item">Khám phá</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-8 m-8 c-12">
+                    <div class="container__info">
+                        <h2 class="container__heading">Giới thiệu</h2>
+                        <div class="info__content">
+                            <img src="./asset/img/ngoidanguitar.jpg" alt="" class="info__img">
+                            <div class="info__body">
+                                <div class="info__body__name"><b>Họ & Tên :</b> Vũ Xuân Trường</div>
+                                <div class="info__body__year"><b>Sinh năm :</b> 2000</div>
+                                <div class="info__body__old"><b>Tuổi :</b> 23</div>
+                                <div class="info__body__hobbies"><b>Sở thích :</b> Ca hát , thích chơi nhạc cụ như đàn guitar, piano, trống . Và đặc biệt thích đi du lịch và khám phá những miền đất mới. </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="container__event">
+                        <h2 class="container__heading">Sự kiện trong đời</h2>
+                        <div class="event__content">
+                            <p><b>Năm 2018</b> sau khi tốt nghiệp cấp 3 tôi đã theo học tại trường Cao đẳng Công nghệ Bách khoa Hà Nội, chuyên ngành Ngôn ngữ và Văn hóa Hàn Quốc.</p>
+                            <p>Các hoạt động giáo dục của trường :</p>
+                            <div class="event__content__img--slick">
+                                <img src="./asset/img/khaigiang2020-danguitar.jpg" alt="">
+                                <img src="./asset/img/baotanghaiphong.jpg" alt="">
+                                <img src="./asset/img/hpc-hoatdong.jpg" alt="">
+                                <img src="./asset/img/hpc-hoatdong1.jpg" alt="">
+                                <img src="./asset/img/hpc-hoatdong2.jpg" alt="">
+                            </div>
+                            <p><b>Năm 2021</b> tôi tốt nghiệp và ra trường với tấm bằng giỏi.</p>
+                            <p>Với tấm bằng tốt nghiệp loại giỏi trong tay, tôi tự tin đi xin việc dọc theo KCN AN Dương.
+                                Và cuối cùng tôi đã quyết định làm thời vụ tại công ty sản xuất linh kiện điện tử. 
+                            </p>
+                            <div class="event__content__img">
+                                <img src="./asset/img/totnghiep.jpg" alt="" width="50%">
+                                <img src="./asset/img/congtyt&w.jpg" alt="" width="50%" >
+                            </div>
+                           
+                            <p><b>Đến năm 2022</b> sau khi đã cống hiến hết mình cho công ty tôi đã lên đường tham gia bảo vệ tổ quốc. Đóng quân tại vùng 1 Hải Quân. Quyết tâm giữ gìn biển đảo Tổ quốc.</p>
+                            <div class="event__content__img">
+                                <img src="./asset/img/nhapngu2022.jpg" alt="" width="33.3%">
+                                <img src="./asset/img/nhapngu2022-2.jpg" alt="" width="33.3%">
+                                <img src="./asset/img/nhapngu2022-3.jpg" alt="" width="33.3%">
+                            </div>
+                            <p>Sau khi hoàn thành nhiệm vụ trở về nhà, tôi lại tiếp tục công hiến cho công ty, đã chăm chỉ học hỏi và trau dồi kiến thức về cấu tạo máy SMT và đã thành công lắp đặt được những chiếc máy đầu tiên xuất khẩu sang các nước như Hàn Quốc, Singapo, Mỹ...</p>
+                            <div class="event__content__img">
+                                <img src="./asset/img/yjlink1.jpg" alt="" width="25%">
+                                <img src="./asset/img/yjlink3.jpg" alt="" width="25%">
+                                <img src="./asset/img/yjlink4.jpg" alt="" width="25%">
+                                <img src="./asset/img/yjlink5.jpg" alt="" width="25%">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="container__friend">
+                        <h2 class="container__heading">Bạn bè<h2>
+                        <div class="container__friend__body">
+                            <div class="row">
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="container__friend__item">
+                                        <img src="./asset/img/duyet.jpg" alt="" class="container__friend__img">
+                                        <div class="container__friend__name">Vũ Đức Duyệt</div>
+                                        <span>23 tuổi, đi SH, Iphone 11</span>
+                                        <p><b>Sở thích :</b> đá bóng, thích sự thủy chung, yêu màu hồng, ghét sự giả dối</p>
+                                    </div>
+                                </div>
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="container__friend__item">
+                                        <img src="./asset/img/nhung.jpg" alt="" class="container__friend__img">
+                                        <div class="container__friend__name">Phạm Kim Nhung</div>
+                                        <span>23 tuổi, đi SH mode, Iphone 12</span>
+                                        <p><b>Sở thích :</b> thích ăn thịt nướng, ngắm hoàng hôn, yêu màu tím</p>
+                                    </div>
+                                </div>
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="container__friend__item">
+                                        <img src="./asset/img/hiẹu.jpg" alt="" class="container__friend__img">
+                                        <div class="container__friend__name">Ngô Văn Hiệu</div>
+                                        <span>23 tuổi, đi SH i160, Realme </span>
+                                        <p><b>Sở thích :</b>Yêu công việc, đam mê ăn uống, ghét bị lừa dối</p>
+                                    </div>
+                                </div>
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="container__friend__item">
+                                        <img src="./asset/img/uyen.jpg" alt="" class="container__friend__img">
+                                        <div class="container__friend__name">Uyên Pun Ny</div>
+                                        <span>23 tuổi, đi MEC, Iphone 12</span>
+                                        <p><b>Sở thích :</b> thích được yêu, muốn tìm kiếm tình yêu đích thực, đam mê phượt</p>
+                                    </div>
+                                </div>
+                                <div class="col l-4 m-6 c-12">
+                                    <div class="container__friend__item">
+                                        <img src="./asset/img/ynhi.jpg" alt="" class="container__friend__img">
+                                        <div class="container__friend__name">Ý Nhi</div>
+                                        <span>20 tuổi, đi Vios, Nokia</span>
+                                        <p><b>Sở thích :</b>Thích uống trà sữa, đi bar cùng bạn bè, đặc biệt không thích nói nhiều</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container__adventure">
+                        <h2 class="container__heading">Những chuyến đi cùng bạn bè</h2>
+                        <p>Những trải nghiệm cùng bạn bè thời thanh xuân là những kỉ niệm quý giá nhất.</p>
+                        <p>Hãy cùng nhìn lại những hành trình chúng ta đã từng đi qua</p>
+                        <div class="container__adventure__img__big-slick">
+                            <img src="./asset/img/kiniem2.jpg" alt="">
+                            <img src="./asset/img/kiniem4.jpg" alt="">
+                            <img src="./asset/img/kiniem5.jpg" alt="">
+                            <img src="./asset/img/kiniem6.jpg" alt="">
+                            <img src="./asset/img/kiniem7.jpg" alt="">
+                            <img src="./asset/img/kiniem8.jpg" alt="">
+                            <img src="./asset/img/kiniem9.jpg" alt="">
+                            <img src="./asset/img/kiniem10.jpg" alt="">
+                            <img src="./asset/img/kiniem11.jpg" alt="">
+                            <img src="./asset/img/kiniem12.jpg" alt="">
+                        </div>
+                        <div class="container__adventure__img-slick">
+                            <img src="./asset/img/kiniem2.jpg" alt="">
+                            <img src="./asset/img/kiniem4.jpg" alt="">
+                            <img src="./asset/img/kiniem5.jpg" alt="">
+                            <img src="./asset/img/kiniem6.jpg" alt="">
+                            <img src="./asset/img/kiniem7.jpg" alt="">
+                            <img src="./asset/img/kiniem8.jpg" alt="">
+                            <img src="./asset/img/kiniem9.jpg" alt="">
+                            <img src="./asset/img/kiniem10.jpg" alt="">
+                            <img src="./asset/img/kiniem11.jpg" alt="">
+                            <img src="./asset/img/kiniem12.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-4 m-4 c-0">
+                    <div class="product-other">
+                        <div class="product-other__heading">Các bài viết liên quan</div>
+                        <div class="product-other__list">
+                            <a href="" class="product-other__item">
+                                <img src="./asset/img/product-nhac.jpg" alt="">
+                                <div class="product-other__item__content">
+                                    <div class="product-other__item__name">Liệt kê các ứng dụng tách lời và nhạc</div>
+                                    <div class="product-other__item__date">Tháng 6, 26 2023</div>
+
+                                </div>
+                            </a>
+                            <a href="" class="product-other__item">
+                                <img src="./asset/img/product-canhbuom.jpg" alt="">
+                                <div class="product-other__item__content">
+                                    <div class="product-other__item__name">Hiệu ứng cách bướm là gì? Ứng dụng hiệu ứng cánh bướm</div>
+                                    <div class="product-other__item__date">Tháng 6, 23 2023</div>
+
+                                </div>
+                            </a>
+                            <a href="" class="product-other__item">
+                                <img src="./asset/img/product-fb.jpg" alt="">
+                                <div class="product-other__item__content">
+                                    <div class="product-other__item__name">Facebook phiên bản đã hết hạn là sao?</div>
+                                    <div class="product-other__item__date">Tháng 7, 20 2023</div>
+
+                                </div>
+                            </a>
+                            <a href="" class="product-other__item">
+                                <img src="./asset/img/product-powerpoint.jpg" alt="">
+                                <div class="product-other__item__content">
+                                    <div class="product-other__item__name">Hướng dẫn cách tạo liên kết trong Powerpoint dễ dàng</div>
+                                    <div class="product-other__item__date">Tháng 8, 06 2023</div>
+
+                                </div>
+                            </a>
+                            <a href="" class="product-other__item"><p>Xem thêm</p><i class="product-other__item__icon fa-solid fa-caret-down"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="contact-with-me">
+                        <div class="contact-with-me__heading">Liên hệ với chúng tôi</div>
+                        <div class="contact-with-me__boby">
+                            <input class="contact-with-me__input" placeholder="Name*">
+                            <input class="contact-with-me__input" placeholder="Email*">
+                            <input class="contact-with-me__input" placeholder="Mesage*">
+                            <button class="contact-with-me__button">SEND MESAGE</button>
+                        </div>
+                    </div>
+                    <div class="create-blog">
+                        <div class="create-blog__heading">Tạo Blog đơn giản miễn phí với Bloger</div>
+                        <p class="create-blog__list">Các trang wed tạo blog miễn phí :</p>
+                        <a class="create-blog__item" href="">1. WordPress.com</a>
+                        <a class="create-blog__item" href="">2.  Blogger.com</a>
+                        <a class="create-blog__item" href="">3. Tumblr.com</a>
+                        <a class="create-blog__item" href="">4. Quora.com</a>
+                        <a class="create-blog__item" href="">5. Postach.io</a>
+                        <a class="create-blog__item" href="">6. Ghost.org</a>
+                        <a href="" class="create-now">CREATE NOW</a>
+                        <div class="create-blog-img">
+                            <img src="./asset/img/create-blog.jfif" alt="">
+                            <img src="./asset/img/create-blog3.jfif" alt="">
+                            <img src="./asset/img/create-blog2.jfif" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <script src="./asset/slick.js"></script>
 </body>
 </html>
