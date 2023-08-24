@@ -8,6 +8,8 @@ html{
     
 }
 
+
+
 :root{
     --color-main: #50b1e4;
     --red-color: red;
@@ -47,6 +49,7 @@ button.slick-next.slick-arrow {
     outline: none;
     border: 1px solid #555;
     width: 28px;
+    cursor: pointer;
 }
 
 button.slick-prev.slick-arrow {
@@ -61,6 +64,8 @@ button.slick-prev.slick-arrow {
     outline: none;
     border: 1px solid #555;
     width: 28px;
+    cursor: pointer;
+    
 }
 
 .slick-dots{
@@ -71,7 +76,7 @@ button.slick-prev.slick-arrow {
 }
 
 .slick-active button{
-    background-color: #67c5c5;
+    background-color: #67c5c5 !important;
 }
 .slick-dots button{
     font-size: 0;
@@ -80,4 +85,5 @@ button.slick-prev.slick-arrow {
     border-radius: 50%;
     outline: none;
     border: none;
+    background-color: #aaa;
 }
